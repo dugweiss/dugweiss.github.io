@@ -3,3 +3,6 @@ function printMessage() {
     msg += "!"
     console.log(msg);
 }
+function getData() {
+    document.getElementById("text-location").innerHTML = "hi there";    
+}
