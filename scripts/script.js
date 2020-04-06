@@ -34,3 +34,9 @@ mySquarea.getArea();
 
 mySquareb.getLength();
 mySquareb.getArea();
+
+function update() {
+    var selectedcolor = document.getElementById("color").value;
+    console.log(selectedcolor);
+    document.body.style.background = selectedcolor;
+}
