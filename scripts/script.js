@@ -8,8 +8,6 @@ function getData() {
     document.getElementById("text-location").innerHTML = "hi there";    
 }
 function logTxtToConsole() {
-    var msg = "working";
-    console.log(msg);
     var msg2 = document.getElementById("usernamefield").value;
     console.log(msg2);
 }
@@ -22,8 +20,8 @@ class Square {
         console.log(this.edgeLength);
     }
     getArea(){
-        var area = this.edgeLength*this.edgeLength
-        console.log(area)
+        var area = this.edgeLength*this.edgeLength;
+        console.log(area);
     }
 }
 var mySquarea = new Square(5);
@@ -39,4 +37,10 @@ function update() {
     var selectedcolor = document.getElementById("color").value;
     console.log(selectedcolor);
     document.body.style.background = selectedcolor;
+}
+
+function logColorToConsole() {
+    var msg2 = document.getElementById("colorbytext").value;
+    console.log(msg2);
+    document.body.style.background = msg2;
 }
